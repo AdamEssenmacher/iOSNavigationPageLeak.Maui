@@ -17,8 +17,14 @@
                 Text="Push the 'Force GC' button"
                 Style="{StaticResource SubHeadline}" />
             
+            <Label x:Name="NavHandlerLabel"
+                   Text=""
+                   Style="{StaticResource SubHeadline}" />
+            
             <Label x:Name="PageLabel"
-                   Style="{StaticResource SubHeadline}"/>
+                   Style="{StaticResource SubHeadline}" />
+            <Label x:Name="PageHandlerLabel"
+                   Style="{StaticResource SubHeadline}" />
 
             <Button
                 Text="Force GC"
