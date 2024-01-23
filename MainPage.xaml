@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iOSNavigationPageLeak.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label x:Name="NavLabel"
+                Text="Push the 'Force GC' button"
+                Style="{StaticResource SubHeadline}" />
+            
+            <Label x:Name="PageLabel"
+                   Style="{StaticResource SubHeadline}"/>
+
+            <Button
+                Text="Force GC"
+                x:Name="ForceGCButton"
+                Clicked="ForceGC"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
